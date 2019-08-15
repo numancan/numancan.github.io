@@ -1,0 +1,18 @@
+{% include header.html %}
+
+<!-- prettier-ignore -->
+<div class="container" style="height: 88vh;">
+        {% include about.html %} 
+    </div>
+
+<div class="container pt-100">
+  <h2 class="underline">Portfolio</h2>
+  {% include project-list.html %}
+</div>
+
+<div class="container pt-100">
+  <h2 class="underline">Pinned Repositories</h2>
+  {% include pinned-list.html %}
+</div>
+
+{% include footer.html %}

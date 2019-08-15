@@ -1,0 +1,47 @@
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 585px));
+  grid-column-gap: 50px;
+  justify-content: space-between;
+  padding: 70px 0;
+
+  .project {
+    position: relative;
+    border: 1px;
+    padding: 30px 0;
+
+    &-header {
+      padding-bottom: 6px;
+      h3 {
+        display: inline;
+      }
+      i {
+        float: right;
+        font-size: 22px;
+        padding-left: 5px;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    button {
+      border: 0;
+      background: $primary-color;
+      color: $secondary-color;
+      width: 85px;
+      height: 32px;
+      position: absolute;
+      right: -20px;
+      top: 20%;
+
+      i {
+        padding-right: 5px;
+      }
+      & + button {
+        top: 30%;
+      }
+    }
+  }
+}

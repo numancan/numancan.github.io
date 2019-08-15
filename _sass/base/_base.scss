@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $background-color;
+}
+
+a {
+  text-decoration: none;
+
+  // font-size: 22px;
+}
+
+h1,
+h2,
+h3,
+a {
+  color: $primary-color;
+}
+
+h4 {
+  color: #0366d6;
+}
+
+footer p {
+  color: $secondary-color;
+}
+
+ul {
+  list-style: none;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 4vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110px;
+}

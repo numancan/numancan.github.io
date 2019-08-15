@@ -1,0 +1,19 @@
+- name: github
+  link: http://www.github.com/numancan
+  icon: fab fa-github
+
+- name: twitter
+  link: http://www.twitter.com/ncipekci
+  icon: fab fa-twitter
+
+- name: linkedin
+  link: http://www.linkedin.com/numancan
+  icon: fab fa-linkedin
+
+- name: codepen
+  link: https://codepen.io/numancan
+  icon: fab fa-codepen
+
+- name: mail
+  link: mailto:n.canipekci@gmail.com
+  icon: fas fa-envelope

@@ -1,0 +1,20 @@
+.pinned-list {
+  background: #f0f4f5;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(230px, 475px));
+  grid-column-gap: 3%;
+  justify-content: space-between;
+  margin: 100px 0;
+
+  li {
+    height: 240px;
+    border: 1px solid #b5acac;
+    border-radius: 5px;
+    padding: 20px;
+    @include flex(column, center);
+
+    p {
+      padding: 10px 0;
+    }
+  }
+}

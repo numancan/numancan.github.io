@@ -1,0 +1,15 @@
+<ul class="project-list">
+  {% for project in site.data.projects %}
+  <li class="project">
+    <div class="project-header">
+      <h3>{{ project.name }}</h3>
+      {% for tech in project.technologies %}
+      <i class="{{ tech.icon }}" style="color: #{{ tech.color }}"></i>
+      {% endfor %}
+    </div>
+    <img src="/assets/images/{{ project.img }}" alt="{{ project.name }}" />
+    <button><i class="far fa-eye"></i>Demo</button>
+    <button><i class="fab fa-github-square"></i>Github</button>
+  </li>
+  {% endfor %}
+</ul>

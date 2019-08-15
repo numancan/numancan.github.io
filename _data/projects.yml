@@ -1,0 +1,35 @@
+- name: Giphy App
+  img: react-giphy.jpg
+  technologies:
+    [
+      { icon: fab fa-html5, color: de4b25 },
+      { icon: fab fa-react, color: 00d8ff },
+      { icon: fab fa-sass, color: c96196 },
+    ]
+
+- name: I Watched
+  img: i-watched.jpg
+  technologies:
+    [
+      { icon: fab fa-html5, color: de4b25 },
+      { icon: fab fa-sass, color: c96196 },
+      { icon: fab fa-js, color: e9d54d },
+    ]
+
+- name: TODO App
+  img: todo-app.jpg
+  technologies:
+    [
+      { icon: fab fa-html5, color: de4b25 },
+      { icon: fab fa-css3-alt, color: 1a70b5 },
+      { icon: fab fa-js, color: e9d54d },
+    ]
+
+- name: Fylo(Clone)
+  img: fylo.jpg
+  technologies:
+    [
+      { icon: fab fa-html5, color: de4b25 },
+      { icon: fab fa-sass, color: c96196 },
+      { icon: fab fa-js, color: e9d54d },
+    ]

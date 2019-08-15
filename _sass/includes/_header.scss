@@ -1,0 +1,12 @@
+header {
+  height: 12vh;
+
+  .nav {
+    height: 100%;
+    @include flex($jc: flex-end, $align: center);
+
+    &-link {
+      padding: 5px 15px;
+    }
+  }
+}

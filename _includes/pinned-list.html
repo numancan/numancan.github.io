@@ -1,0 +1,11 @@
+<!-- prettier-ignore -->
+<ul class="pinned-list">
+  {% for repository in site.github.public_repositories %} 
+  {% if site.repositories contains repository.name %}
+  <li>
+    <h4><a href="{{ repository.html_url }}">repository.name</a></h4>
+    <p>repository.description</p>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>

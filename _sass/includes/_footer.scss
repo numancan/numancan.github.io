@@ -1,0 +1,15 @@
+footer {
+  height: 20vh;
+  background: $primary-color;
+  text-align: center;
+  i {
+    color: $secondary-color;
+    font-size: 32px;
+    padding: 20px 10px;
+    cursor: pointer;
+  }
+
+  p {
+    padding-top: 2%;
+  }
+}
