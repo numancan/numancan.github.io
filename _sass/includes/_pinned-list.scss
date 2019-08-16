@@ -20,10 +20,10 @@
 
   li {
     background: #f0f4f5;
-    min-height: 230px;
+    min-height: 200px;
     border: 1px solid #b5acac;
     border-radius: 5px;
-    padding: 8% 5% 0 5%;
+    padding: 10% 5% 0 5%;
     margin: 5% 0;
     @include flex(column);
     @include media($max-width: 1024px) {
