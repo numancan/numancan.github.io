@@ -41,4 +41,4 @@ repositories:
   - i-watched
   - 5-axis-trainable-robot-arm
   - auto-excel-translator
-  - object-tracker-opencv-arduino
+  - simple-car-counting-opencv
