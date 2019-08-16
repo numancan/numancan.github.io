@@ -29,12 +29,12 @@
     @include media($max-width: 1024px) {
       padding-bottom: 5%;
     }
+  }
 
-    h4 {
-      @include flex($align: center);
-      svg {
-        margin-right: 10px;
-      }
+  h4 {
+    @include flex($align: center);
+    svg {
+      margin-right: 10px;
     }
   }
 }
