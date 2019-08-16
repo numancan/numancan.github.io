@@ -1,0 +1,11 @@
+.nav {
+  height: 100%;
+  @include flex($jc: flex-end, $align: center);
+  @include media($max-width: 768px) {
+    justify-content: center;
+  }
+
+  &-link {
+    padding: 5px 15px;
+  }
+}

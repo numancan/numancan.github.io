@@ -11,6 +11,9 @@ a {
 header {
   a {
     font-size: 1.1em;
+    @include media($max-width: 425px) {
+      font-size: 1em;
+    }
   }
 }
 

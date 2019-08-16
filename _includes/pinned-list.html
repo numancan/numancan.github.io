@@ -3,6 +3,7 @@
   {% for repository in site.github.public_repositories %} 
   {% if site.repositories contains repository.name %}
   <li>
+    {% octicon repo height:20 class:"mr-1 v-align-middle" fill:"#586069" aria-label:repo %}
     <h4><a href="{{ repository.html_url }}">{{repository.name}}</a></h4>
     <p>{{repository.description}}</p>
   </li>
