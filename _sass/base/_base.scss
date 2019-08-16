@@ -22,33 +22,19 @@ body {
 
 a {
   text-decoration: none;
-
-  // font-size: 22px;
+  &,
+  &:visited {
+    color: $primary-color;
+  }
 }
 
 h1,
 h2,
 h3,
-a {
+label {
   color: $primary-color;
-}
-
-h4 {
-  color: #0366d6;
-}
-
-footer p {
-  color: $secondary-color;
 }
 
 ul {
   list-style: none;
-}
-
-.arrow {
-  position: absolute;
-  bottom: 4vh;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 110px;
 }

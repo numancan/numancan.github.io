@@ -1,0 +1,37 @@
+.contact-form {
+  height: 78vh;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0;
+  @include flex(column, center);
+
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 12px;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: $secondary-color;
+  }
+
+  textarea {
+    height: 20vh;
+  }
+
+  input[type='submit'] {
+    width: 50%;
+    background-color: $secondary-color;
+    color: $primary-color;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center;
+  }
+}
