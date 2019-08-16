@@ -13,7 +13,9 @@
   @include media($max-width: 768px) {
     display: block;
   }
-
+  h4 {
+    display: inline-block;
+  }
   a {
     &,
     &:visited {
