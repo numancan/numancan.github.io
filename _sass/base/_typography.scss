@@ -8,14 +8,26 @@ a {
   font-weight: 500;
 }
 
-header a {
-  font-size: 1.2em;
+header {
+  a {
+    font-size: 1.1em;
+  }
 }
 
-h1 {
-  font-weight: 900;
-  letter-spacing: -1px;
-  font-size: 48px;
+.about {
+  h1 {
+    font-weight: 900;
+    letter-spacing: -1px;
+    font-size: 55px;
+    line-height: 60px;
+  }
+
+  p {
+    font-size: 1.2em;
+    @include media($max-width: 425px) {
+      font-size: 1.1em;
+    }
+  }
 }
 
 h2 {

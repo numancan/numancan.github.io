@@ -7,10 +7,8 @@ $link-size: 18px;
   left: 10%;
   @include flex(column, $jc: space-around, $align: center);
   @include media($max-width: 768px) {
-    left: 50%;
-    top: 60%;
-    transform: translate(-50%, -60%);
-    width: 50vw;
+    position: static;
+    padding-top: 20%;
     @include flex(row, $jc: space-around, $align: center);
   }
 
