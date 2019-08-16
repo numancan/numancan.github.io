@@ -1,0 +1,17 @@
+<form class="contact-form" method="POST">
+  <label for="name">NAME</label>
+  <input type="text" name="name" placeholder="Matt.." />
+  <label for="email">EMAIL</label>
+  <input type="email" name="_replyto" placeholder="example@example.com" />
+  <label for="Message">MESSAGE</label>
+  <textarea name="message" placeholder="Your message"></textarea>
+  <input type="text" name="_gotcha" style="display:none" />
+  <input type="submit" value="SEND" />
+</form>
+<script>
+  var contactForm = document.querySelector('.contact-form');
+  contactForm.setAttribute(
+    'action',
+    '//formspree.io/' + 'thenoxious45' + '@' + 'gmail' + '.' + 'com'
+  );
+</script>
