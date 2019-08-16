@@ -1,11 +1,19 @@
 .pinned-list {
+  // FIX OVERFLOW PROBLEM ON MOBILE
   background: #f0f4f5;
   display: grid;
-  grid-template-columns: repeat(2, minmax(350px, 1fr));
+  grid-template-columns: repeat(3, minmax(350px, 1fr));
   grid-column-gap: 3%;
   grid-row-gap: 5%;
   justify-content: space-between;
-  margin: 100px 0;
+  padding: 100px 0 250px 0;
+  box-sizing: border-box;
+  @include media($max-width: 1600px) {
+    grid-template-columns: repeat(2, minmax(350px, 1fr));
+  }
+  @include media($max-width: 1024px) {
+    grid-template-columns: minmax(85vw, 1fr);
+  }
 
   a {
     &,
@@ -18,7 +26,11 @@
     height: 230px;
     border: 1px solid #b5acac;
     border-radius: 5px;
-    padding: 12% 5%;
+    padding: 8% 5% 0 5%;
     @include flex(column);
+    @include media($max-width: 1024px) {
+      height: auto;
+      padding-bottom: 5%;
+    }
   }
 }

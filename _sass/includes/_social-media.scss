@@ -2,9 +2,17 @@ $icon-size: 26px;
 $link-size: 18px;
 
 .social-list {
-  @include flex(column, $jc: space-around, $align: center);
   position: absolute;
   bottom: 0;
+  left: 10%;
+  @include flex(column, $jc: space-around, $align: center);
+  @include media($max-width: 768px) {
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -60%);
+    width: 50vw;
+    @include flex(row, $jc: space-around, $align: center);
+  }
 
   &::after {
     content: '';
@@ -12,6 +20,10 @@ $link-size: 18px;
     height: 20vh;
     border: 2.5px solid $primary-color;
     margin-top: 20px;
+
+    @include media($max-width: 768px) {
+      display: none;
+    }
   }
 
   .icon {
