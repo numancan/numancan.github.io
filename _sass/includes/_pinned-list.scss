@@ -1,21 +1,16 @@
 .pinned-list {
-  // FIX OVERFLOW PROBLEM ON MOBILE
-
   display: grid;
   grid-template-columns: repeat(3, minmax(350px, 1fr));
   grid-column-gap: 3%;
   justify-content: space-between;
   padding: 100px 0 180px 0;
-  box-sizing: border-box;
   @include media($max-width: 1600px) {
     grid-template-columns: repeat(2, minmax(350px, 1fr));
   }
   @include media($max-width: 768px) {
     display: block;
   }
-  h4 {
-    display: inline-block;
-  }
+
   a {
     &,
     &:visited {
@@ -25,15 +20,21 @@
 
   li {
     background: #f0f4f5;
-    height: 230px;
+    min-height: 230px;
     border: 1px solid #b5acac;
     border-radius: 5px;
     padding: 8% 5% 0 5%;
     margin: 5% 0;
     @include flex(column);
     @include media($max-width: 1024px) {
-      height: auto;
       padding-bottom: 5%;
+    }
+
+    h4 {
+      @include flex($align: center);
+      svg {
+        margin-right: 10px;
+      }
     }
   }
 }
