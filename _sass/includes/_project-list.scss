@@ -29,7 +29,7 @@
       width: 100%;
     }
 
-    button {
+    a {
       border: 0;
       background: $primary-color;
       color: $secondary-color;
@@ -38,6 +38,7 @@
       position: absolute;
       right: -20px;
       top: 20%;
+      @include flex($jc: center, $align: center);
       @include media($max-width: 768px) {
         top: 25%;
       }
@@ -45,7 +46,7 @@
       i {
         padding-right: 5px;
       }
-      & + button {
+      & + a {
         top: 30%;
         @include media($max-width: 768px) {
           top: 39%;
