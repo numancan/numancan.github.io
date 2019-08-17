@@ -7,5 +7,9 @@
 
   &-link {
     padding: 5px 15px;
+
+    a {
+      @include underline($hover: true);
+    }
   }
 }
