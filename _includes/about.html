@@ -7,14 +7,31 @@
 </div>
 <div>{% include social-media.html %}</div>
 
-<img class="arrow" src="/assets/images/Arrow.svg" alt="arrow" />
+<img
+  onclick="scrollToView('#portfolio')"
+  class="arrow"
+  src="/assets/images/Arrow.svg"
+  alt="arrow"
+/>
 
+<!-- TODO: Make external style -->
 <style>
   .arrow {
     position: absolute;
     bottom: 2vh;
     left: 50%;
     transform: translateX(-50%);
-    width: 90px;
+    object-fit: cover;
+    cursor: pointer;
+    animation: arrowAnim 1s ease-out 0.1s infinite alternate;
+    width: 70px;
+    height: 30px;
+  }
+
+  @keyframes arrowAnim {
+    to {
+      height: 45px;
+      bottom: 1.5vh;
+    }
   }
 </style>
