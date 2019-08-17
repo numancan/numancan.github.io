@@ -1,5 +1,6 @@
 - name: Giphy App
   img: react-giphy.jpg
+  url: ''
   technologies:
     [
       { icon: fab fa-html5, color: de4b25 },
@@ -9,6 +10,7 @@
 
 - name: I Watched
   img: i-watched.jpg
+  url: i-watched
   technologies:
     [
       { icon: fab fa-html5, color: de4b25 },
@@ -18,6 +20,7 @@
 
 - name: TODO App
   img: todo-app.jpg
+  url: todo-app-js
   technologies:
     [
       { icon: fab fa-html5, color: de4b25 },
@@ -27,6 +30,7 @@
 
 - name: Fylo(Clone)
   img: fylo.jpg
+  url: ''
   technologies:
     [
       { icon: fab fa-html5, color: de4b25 },
