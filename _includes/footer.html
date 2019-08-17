@@ -1,10 +1,11 @@
 <footer>
   {% for social in site.data.social-links %}
-  <a href="{{ social.link }}" target="_blank"
-    ><i class="{{ social.icon }}"></i
-  ></a>
+  <a href="{{ social.link }}" target="_blank"><i class="{{ social.icon }}"></i></a>
   {% endfor %}
   <p>Handcrafted by Numan Can İpekçi | Jekyll</p>
 </footer>
+
+<!-- SCRIPTS -->
+<script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
 </body>
 </html>
