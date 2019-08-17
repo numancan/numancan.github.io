@@ -1,9 +1,8 @@
 .contact-form {
-  height: 78vh;
-  width: 90%;
   max-width: 500px;
   margin: 0 auto;
   padding: 0;
+  @include size(90%, 78vh);
   @include flex(column, center);
 
   input[type='text'],

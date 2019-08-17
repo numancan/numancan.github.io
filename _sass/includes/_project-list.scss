@@ -27,17 +27,17 @@
 
     img {
       width: 100%;
+      box-shadow: 15px 15px 0px 0px $secondary-color;
+      border-radius: 5px;
     }
 
     a {
+      border-radius: 5px;
       border: 0;
       background: $primary-color;
       color: $secondary-color;
-      width: 85px;
-      height: 32px;
-      position: absolute;
-      right: -20px;
-      top: 20%;
+      @include position-abs($right: -20px, $top: 20%);
+      @include size(85px, 35px);
       @include flex($jc: center, $align: center);
       @include media($max-width: 768px) {
         top: 25%;
