@@ -1,3 +1,4 @@
+<!-- prettier-ignore -->
 <ul class="project-list">
   {% for project in site.data.projects %}
   <li class="project">
@@ -8,8 +9,12 @@
       {% endfor %}
     </div>
     <img src="/assets/images/{{ project.img }}" alt="{{ project.name }}" />
-    <button><i class="far fa-eye"></i>Demo</button>
-    <button><i class="fab fa-github-square"></i>Github</button>
+    <a href="{{ site.baseurl }}/{{ project.url }}" target="_blank">
+      <i class="far fa-eye"></i>Demo</a>
+    <a
+      href="https://github.com/{{ site.github_username }}/{{ project.url }}"
+      target="_blank">
+      <i class="fab fa-github-square"></i>Github</a>
   </li>
   {% endfor %}
 </ul>
