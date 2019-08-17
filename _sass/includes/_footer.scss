@@ -9,6 +9,11 @@ footer {
     font-size: 32px;
     padding: 0 10px 20px 10px;
     cursor: pointer;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   p {
