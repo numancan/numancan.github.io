@@ -1,6 +1,6 @@
 - name: Giphy App
   img: react-giphy.jpg
-  url: ''
+  url: 'react-giphy-app'
   technologies:
     [
       { icon: fab fa-html5, color: de4b25 },
