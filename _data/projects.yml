@@ -30,7 +30,7 @@
 
 - name: Fylo(Clone)
   img: fylo.jpg
-  url: ''
+  url: 'fylo-clone'
   technologies:
     [
       { icon: fab fa-html5, color: de4b25 },
