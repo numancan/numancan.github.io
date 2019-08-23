@@ -1,7 +1,9 @@
 <ul class="nav">
   <li class="nav-link"><a href="/">About</a></li>
   <li class="nav-link">
+    {% if page.name == "index.md" %}
     <a onclick="scrollToView('#portfolio')">Portfolio</a>
+    {% endif %}
   </li>
   <li class="nav-link"><a href="/contact.html">Contact</a></li>
 </ul>
