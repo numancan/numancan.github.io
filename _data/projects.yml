@@ -1,4 +1,5 @@
 - name: Cinemania
+  description: A React application for booking movie tickets.
   img: cinemania.jpg
   url: 'cinemania'
   technologies:
@@ -8,6 +9,7 @@
     ]
 
 - name: Secim Haritasi
+  description: Electoral result map for Turkey.
   img: secim-haritasi.jpg
   url: 'secim-haritasi'
   technologies:
@@ -17,6 +19,7 @@
     ]
 
 - name: Giphy App
+  description: GIF search engine built with React.
   img: react-giphy.jpg
   url: 'react-giphy-app'
   technologies:
@@ -26,12 +29,14 @@
     ]
 
 - name: I Watched
+  description: Keep a track of movies and TV shows that you watched.
   img: i-watched.jpg
   url: i-watched
   technologies:
     [{ icon: fab fa-sass, color: c96196 }, { icon: fab fa-js, color: e9d54d }]
 
 - name: TODO App
+  description: Simple To-Do list application with pure Javascript.
   img: todo-app.jpg
   url: todo-app-js
   technologies:
@@ -41,6 +46,7 @@
     ]
 
 - name: Fylo(Clone)
+  description:
   img: fylo.jpg
   url: 'fylo-clone'
   technologies:
