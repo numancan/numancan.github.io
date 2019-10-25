@@ -8,7 +8,12 @@
       <i class="{{ tech.icon }}" style="color: #{{ tech.color }}"></i>
       {% endfor %}
     </div>
-    <img src="/assets/images/{{ project.img }}" alt="{{ project.name }}" />
+    <div class="poster">
+      <img src="/assets/images/{{ project.img }}" alt="{{ project.name }}" />
+      <div class="overlay"> 
+        <p>{{ project.description }}</p> 
+      </div>
+    </div>
     <a href="{{ site.baseurl }}/{{ project.url }}" target="_blank">
       <i class="far fa-eye"></i>Demo</a>
     <a

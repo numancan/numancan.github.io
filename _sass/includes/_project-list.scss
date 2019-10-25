@@ -4,6 +4,7 @@
   grid-column-gap: 50px;
   justify-content: center;
   padding: 70px 0;
+  
   @include media($max-width: 768px) {
     grid-template-columns: 80vw;
   }
@@ -25,32 +26,55 @@
       }
     }
 
-    img {
-      width: 100%;
-      box-shadow: 15px 15px 0px 0px $secondary-color;
-      border-radius: 5px;
+    .poster {
+      position: relative;
+
+      img {
+        display: block;
+        width: 100%;
+        box-shadow: 15px 15px 0px 0px $secondary-color;
+        border-radius: 5px;
+      }
+
+      .overlay {
+        @include position-abs(0,0);
+        @include size(100%);
+        background: $primary-color;
+        border-radius: 5px;
+        opacity: 0.85;
+        transition: opacity .2s;
+        
+
+        p {
+          height: 100%;
+          display: flex;
+          align-items: flex-end;
+          padding: 1rem;
+        }
+      }
+
+      .overlay:hover {
+        opacity: 0;
+      }
     }
 
     a {
-      border-radius: 5px;
-      border: 0;
-      background: $primary-color;
-      color: $secondary-color;
-      @include position-abs($right: -20px, $top: 20%);
+      @include position-abs($right: -20px, $top: 80px);
       @include size(85px, 35px);
       @include flex($jc: center, $align: center);
-      @include media($max-width: 768px) {
-        top: 25%;
-      }
+      border-radius: 5px;
+      border: 0;
+      background: lighten($primary-color, 3) ;
+      color: $secondary-color;
+      
+
 
       i {
         padding-right: 5px;
       }
+      
       & + a {
-        top: 30%;
-        @include media($max-width: 768px) {
-          top: 39%;
-        }
+        top: 120px;
       }
     }
   }
