@@ -1,9 +1,26 @@
+- name: Cinemania
+  img: cinemania.jpg
+  url: 'cinemania'
+  technologies:
+    [
+      { icon: fab fa-react, color: 00d8ff },
+      { icon: fab fa-sass, color: c96196 },
+    ]
+
+- name: Secim Haritasi
+  img: secim-haritasi.jpg
+  url: 'secim-haritasi'
+  technologies:
+    [
+      { icon: fab fa-react, color: 00d8ff },
+      { icon: fab fa-sass, color: c96196 },
+    ]
+
 - name: Giphy App
   img: react-giphy.jpg
   url: 'react-giphy-app'
   technologies:
     [
-      { icon: fab fa-html5, color: de4b25 },
       { icon: fab fa-react, color: 00d8ff },
       { icon: fab fa-sass, color: c96196 },
     ]
@@ -12,18 +29,13 @@
   img: i-watched.jpg
   url: i-watched
   technologies:
-    [
-      { icon: fab fa-html5, color: de4b25 },
-      { icon: fab fa-sass, color: c96196 },
-      { icon: fab fa-js, color: e9d54d },
-    ]
+    [{ icon: fab fa-sass, color: c96196 }, { icon: fab fa-js, color: e9d54d }]
 
 - name: TODO App
   img: todo-app.jpg
   url: todo-app-js
   technologies:
     [
-      { icon: fab fa-html5, color: de4b25 },
       { icon: fab fa-css3-alt, color: 1a70b5 },
       { icon: fab fa-js, color: e9d54d },
     ]
@@ -32,8 +44,4 @@
   img: fylo.jpg
   url: 'fylo-clone'
   technologies:
-    [
-      { icon: fab fa-html5, color: de4b25 },
-      { icon: fab fa-sass, color: c96196 },
-      { icon: fab fa-js, color: e9d54d },
-    ]
+    [{ icon: fab fa-sass, color: c96196 }, { icon: fab fa-js, color: e9d54d }]
