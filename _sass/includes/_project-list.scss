@@ -1,0 +1,38 @@
+.projects {
+    @include flex(column, $jc: space-between, $align: flex-start);
+
+    .project-list {
+        @include flex(column, $jc: space-between, $align: flex-start);
+        gap: 30px;
+        // margin-top: 30px;
+
+        .project-item {
+            @include flex(row, $jc: flex-start, $align: flex-start);
+            gap: 50px;
+
+            img {
+                width: $main-left-width;
+                border-radius: .7rem;
+            }
+        }
+    }
+}
+
+.project-desc {
+    @include flex(column, $jc: space-between, $align: flex-start);
+
+    .links {
+        @include flex(row, $jc: flex-start, $align: flex-start);
+        gap: 10px;
+        padding: 12px 0px;
+        
+        i {
+            font-size: 0.9rem;
+            padding-right: 6px;
+        }
+
+        a {
+            @include underline(true);
+        }
+    }    
+}

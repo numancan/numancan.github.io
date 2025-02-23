@@ -1,0 +1,15 @@
+.tag-list {
+    @include flex(row, $jc: flex-start, $align: flex-start);
+    flex-wrap: wrap;
+    gap: 20px;
+
+    li {
+        font-size: 0.8em;
+        padding: 0.2rem 0.7rem;
+        // border-radius: 9999px;
+        border-radius: .7rem;
+        
+        background: $secondary-color;
+        color: $background-color;
+    }
+}

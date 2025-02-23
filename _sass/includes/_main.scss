@@ -1,0 +1,11 @@
+main {
+    padding-top: 10vh;
+    max-width: $main-max-width;
+    > div {
+        margin-bottom: 30px;
+        > h2 { 
+            margin-bottom: 20px;
+        }
+    }
+    margin-bottom: 20vh;
+}

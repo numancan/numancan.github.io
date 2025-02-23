@@ -1,0 +1,28 @@
+<div class="projects">
+    <h2>Projects</h2>
+    <ul class="project-list">
+        {% for project in site.data.projects %}
+        <a href="{{project.links[0].href}}">
+            <li class="project-item">
+                <img src="{{project.img}}" alt="">
+                <div class="project-desc">
+                    <h3>{{project.name}}</h3>
+                    <p>{{project.description}}</p>
+                    <div class="links">
+                    {% for link in project.links %}
+                        <a href="{{link.href}}"><i class="fas fa-link"></i><span>{{link.name}}</span></a>
+                    {% endfor %}
+                    </div>
+                    <ul class="tag-list">
+                    {% for tag in project.tags %}
+                        <li>{{tag}}</li>
+                    {% endfor %}
+                    </ul>
+                </div>
+            </li>
+        </a>
+        {% endfor %}
+    </ul>
+</div>
+
+

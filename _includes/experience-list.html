@@ -1,0 +1,20 @@
+<div class="experience">
+    <h2>Experience</h2>
+    <ul class="experience-list">
+        {% for experience in site.data.experience %}
+            <li class="experience-item">
+                <p>{{experience.start}} - {{experience.end}}</p>
+                <div>
+                    <h3>{{experience.title}}</h3>
+                    <h4>{{experience.company}}</h4>
+                    <p>{{experience.description}}</p>
+                    <ul class="tag-list">
+                    {% for tag in experience.tags %}
+                        <li>{{tag}}</li>
+                    {% endfor %}
+                    </ul>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

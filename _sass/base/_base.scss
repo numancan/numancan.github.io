@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+  // scroll-behavior: smooth;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $background-color;
+  height: 100%;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+  // gap: 16vw;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  &,
+  &:visited {
+    color: $primary-color;
+  }
+}
+
+p {
+  color: rgba($color: $secondary-color, $alpha: 0.9) ;
+  // color: $secondary-color;
+  // color: whitesmoke;
+
+  >span {
+    color: rgba($color: $primary-color, $alpha: 0.9) ;
+    font-weight: 600;
+  }
+}
+
+h1,
+h2 {
+  color: #0aeedd;
+}
+
+h3,
+h4,
+label {
+  line-height: 1;
+  padding-bottom: 4px;
+  color: $primary-color;
+}
+
+ul {
+  list-style: none;
+}
