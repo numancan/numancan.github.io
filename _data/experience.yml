@@ -2,17 +2,18 @@
   title: Hardware Designer
   start: Dec 2019
   end: Present
-  description: I spend most of my time building software. I've built mobile games, Python project and websites. Currently I'm focused on web development and trying to improve myself to become JavaScript developer.
+  description: >
+    I am responsible for the PCB design, hardware
+    verification, EMC/EMI and safety testing, and
+    preparing the necessary documentation and
+    requirements for the production of high-volume
+    electricity meters.<br><br>
+    - Developing and optimizing PCB layouts featuring RS485, GSM, and RF communication.<br><br>
+    - Hardware design with consideration for signal integrity, EMI/EMC, DFM (Design for Manufacturability), and DFT (Design for Test).<br><br>
+    - Creating test plans and procedures to validate hardware designs and preparing documentation.<br><br>
+    - Performing and monitoring EMI/EMC tests for the product.<br><br>
   tags:
     - HW Design
     - EMC/EMI
     - DFM
     - HW Validation
-
-# - company: Gates
-#   title: Intern
-#   start: Feb 2019
-#   end: Jul 2019
-#   description: I spend most of my time building software. I've built mobile games, Python project and websites. Currently I'm focused on web development and trying to improve myself to become JavaScript developer.
-#   tags:
-#     - PLC

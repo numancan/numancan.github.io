@@ -5,10 +5,7 @@
     height: 90vh;
     max-width: $header-max-width;
   
-    // p {
-    //   font-size: 1.2em;
-    //   @include media($max-width: 425px) {
-    //     font-size: 1.1em;
-    //   }
-    // }
+    p {
+      font-size: 1.1em;
+    }
 }

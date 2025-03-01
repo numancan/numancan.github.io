@@ -2,7 +2,6 @@
     <h2>Projects</h2>
     <ul class="project-list">
         {% for project in site.data.projects %}
-        <a href="{{project.links[0].href}}">
             <li class="project-item">
                 <img src="{{project.img}}" alt="">
                 <div class="project-desc">
@@ -20,7 +19,6 @@
                     </ul>
                 </div>
             </li>
-        </a>
         {% endfor %}
     </ul>
 </div>

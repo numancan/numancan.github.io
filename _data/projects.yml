@@ -1,16 +1,26 @@
-- name: RFingan
-  description: This project focuses on developing a RFID board capable of reading, writing, and emulating RFID cards at both 125 kHz and 13.56 MHz frequencies. The board is powered by the RP2040 microcontroller, utilizing the PN532 for HF RFID operations and a custom analog circuit for LF RFID handling. The firmware is based on FreeRTOS, ensuring efficient multitasking and real-time performance.
-  img: assets/images/rfingan.png
+- name: Smart Home Gateway
+  description: >
+    This smart home <span>gateway</span> is designed to manage and
+    connect various smart devices, featuring Wi-Fi/BLe, Zigbee,
+    and 4G GSM for seamless wireless communication. It includes 1
+    Gigabit Ethernet for fast wired networking and supports M.2 SSD
+    extension for additional storage. The board also provides CSI,
+    DSI, and HDMI interfaces for display connectivity. Powered by
+    the Raspberry Pi Compute Module 4 (CM4), it offers high
+    performance and flexibility for home automation and IoT
+    applications.
+  img: assets/images/smart_home_gateway.png
   links:
     [
       { name: Github, href: https://www.w3schools.com },
       { name: Altium Viewer, href: https://www.w3schools.com }
     ]
   tags:
-    - RFID
-    - FREERTOS
-    - RP2040
-    - C
+    - HIGH SPEED
+    - SMPS
+    - ETH
+    - CM4
+    - ZIGBEE
 
 - name: Picow Ducky
   description: >
@@ -32,17 +42,25 @@
     - WEB SERVER
     - C
 
-- name: Smart Home Gateway
-  description: This smart home <span>gateway</span> is designed to manage and connect various smart devices, featuring Wi-Fi/BLe, Zigbee, and 4G GSM for seamless wireless communication. It includes 1 Gigabit Ethernet for fast wired networking and supports M.2 SSD extension for additional storage. The board also provides CSI, DSI, and HDMI interfaces for display connectivity. Powered by the Raspberry Pi Compute Module 4 (CM4), it offers high performance and flexibility for home automation and IoT applications.
-  img: assets/images/smart_home_gateway.png
+- name: RFingan
+  description: >
+    This project focuses on developing a RFID board capable of
+    reading, writing, and emulating RFID cards at both 125 kHz
+    and 13.56 MHz frequencies. The board is powered by the RP2040
+    microcontroller, utilizing the PN532 for HF RFID operations
+    and a custom analog circuit for LF RFID handling. The firmware
+    is based on FreeRTOS, ensuring efficient multitasking and
+    real-time performance.
+  img: assets/images/rfingan.png
   links:
     [
       { name: Github, href: https://www.w3schools.com },
       { name: Altium Viewer, href: https://www.w3schools.com }
     ]
   tags:
-    - HIGH SPEED
-    - SMPS
-    - ETH
-    - CM4
-    - ZIGBEE
+    - RFID
+    - FREERTOS
+    - RP2040
+    - C
+
+
