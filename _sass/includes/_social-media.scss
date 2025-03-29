@@ -1,0 +1,103 @@
+$icon-size: 30px;
+$link-size: 18px;
+
+.social-list {
+  @include position-abs($bottom: 0, $left: 0);
+  @include flex(column, $jc: space-around, $align: center);
+
+  @include media($max-width: 1200px) {
+    display: none;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    height: 10vh;
+    border: 2.5px solid $secondary-color;
+    margin-top: 20px;
+  }
+
+  .icon {
+    position: relative;
+    margin: 10px 0;
+
+    a {
+      color: $secondary-color;
+      cursor: pointer;
+      font-size: $link-size;
+      font-weight: 100;
+      transform: translate(-50%, -50%);
+      transition: clip-path 0.6s ease-in-out;
+      clip-path: circle(0);
+      @include position-abs($top: 50%, $left: 50%);
+    }
+
+    i {
+      color: $secondary-color;
+      font-size: $link-size;
+      transition: clip-path 0.5s ease-out, opacity 0.6s;
+      clip-path: circle(100%);
+      opacity: 1;
+    }
+
+    &::before,
+    &::after {
+      transform: translateY(-50%);
+      display: block;
+      content: '';
+      border: 2px solid $secondary-color;
+      height: 34px;
+      width: $icon-size;
+      @include position-abs($top: 50%);
+    }
+
+    &::before {
+      right: 0;
+      clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+      transition: right 0.3s ease 0.2s, opacity 0.6s;
+    }
+
+    &::after {
+      left: 0;
+      clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+      transition: left 0.3s ease 0.2s, opacity 0.6s;
+    }
+
+    &:hover>i {
+      opacity: 0;
+      clip-path: circle(0);
+    }
+
+    &:hover>a {
+      clip-path: circle(100%);
+    }
+
+    &:hover::before {
+      right: 40px;
+    }
+
+    &:hover::after {
+      left: 40px;
+
+    }
+  }
+}
+
+
+.social-list-h {
+  @include flex(row, $jc: space-around, $align: center);
+  gap: 20px;
+  padding-top: 16px;
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+
+  a {
+    color: $secondary-color;
+
+    i {
+      font-size: 1.3rem;
+    }
+  }
+}

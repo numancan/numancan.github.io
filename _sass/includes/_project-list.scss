@@ -1,0 +1,63 @@
+.projects {
+  @include flex(column, $jc: space-between, $align: flex-start);
+
+  .project-list {
+    @include flex(column, $jc: space-between, $align: flex-start);
+    gap: 50px;
+    // margin-top: 30px;
+
+    .project-item {
+      @include media($max-width: 700px) {
+        @include flex(column, $jc: space-between, $align: flex-start);
+        gap: 20px;
+      }
+
+      @include flex(row, $jc: flex-start, $align: flex-start);
+      gap: 50px;
+
+      img {
+        @include media($max-width: 500px) {
+          align-self: center;
+        }
+
+        width: $main-left-width;
+        border-radius: .7rem;
+      }
+    }
+  }
+}
+
+.project-desc {
+  @include flex(column, $jc: space-between, $align: flex-start);
+
+  .links {
+    @include flex(row, $jc: flex-start, $align: flex-start);
+    gap: 10px;
+    padding: 12px 0px;
+
+    i {
+      font-size: 0.9rem;
+      padding-right: 6px;
+    }
+
+    a {
+      @include underline(true);
+    }
+  }
+}
+
+.projects>ul>li {
+  // background-color: aqua;
+  box-shadow: darken($primary-color, 70%) 0 0 10px 0px;
+  border-collapse: collapse;
+  // box-shadow: 8px 8px 10px #0a0a0a , -8px -8px 8px #0a0a0a;
+  border-radius: .7rem;
+  padding: 1.2rem;
+  // cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: scale(1.005);
+    box-shadow: darken($primary-color, 70%) 0 0 10px 2px;
+  }
+}
